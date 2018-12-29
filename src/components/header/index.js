@@ -28,11 +28,12 @@ function AppHeader(props) {
   const { classes } = props;
   return (
     <div className={classes.root}>
-      <AppBar position="static">
+      <AppBar position="static" color="default">
         <Toolbar>
           <IconButton className={classes.menuButton} color="inherit" aria-label="Menu">
             <MenuIcon />
           </IconButton>
+          <img src="logo.png" alt="logo" class="logo" />
           <Typography variant="h5" color="inherit">
             ІПНП
           </Typography>
