@@ -1,17 +1,17 @@
+import 'typeface-roboto';
 import React, { Component } from 'react';
-import Button from '@material-ui/core/Button';
+import Typography from '@material-ui/core/Typography';
+import AppHeader from './components/header'
 
-class App extends Component {
+export default class App extends Component {
   render() {
     return (
-      <div className="container">
-        Hello world!
-        <Button variant="contained" color="primary">
-          Click
-        </Button>
+      <div>
+        <AppHeader />
+        <Typography variant="h5" align="center">
+          Введення
+        </Typography>
       </div>
     );
   }
 }
-
-export default App;
