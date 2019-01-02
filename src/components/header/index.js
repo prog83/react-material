@@ -33,7 +33,7 @@ function AppHeader(props) {
           <IconButton className={classes.menuButton} color="inherit" aria-label="Menu">
             <MenuIcon />
           </IconButton>
-          <img src="logo.png" alt="logo" class="logo" />
+          <img src="logo.png" alt="logo" className="logo" />
           <Typography variant="h5" color="inherit">
             ІПНП
           </Typography>
