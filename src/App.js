@@ -1,7 +1,7 @@
-import 'typeface-roboto';
-import React, { Component } from 'react';
-import Typography from '@material-ui/core/Typography';
-import AppHeader from './components/header/'
+import "typeface-roboto";
+import React, { Component } from "react";
+import Typography from "@material-ui/core/Typography";
+import AppHeader from "./components/header/";
 
 export default class App extends Component {
   render() {
