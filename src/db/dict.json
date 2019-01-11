@@ -1,0 +1,20 @@
+{
+  "kat_pv": 
+  [
+    {"key": "A", "value": "A"},
+    {"key": "A1", "value": "A1"},
+    {"key": "B", "value": "B"},
+    {"key": "BE", "value": "BE"},
+    {"key": "B1", "value": "B1"},
+    {"key": "C", "value": "C"},
+    {"key": "CE", "value": "CE"},
+    {"key": "C1", "value": "C1"},
+    {"key": "C1E", "value": "C1E"},
+    {"key": "D", "value": "D"},
+    {"key": "DE", "value": "DE"},
+    {"key": "D1", "value": "D1"},
+    {"key": "D1E", "value": "D1E"},
+    {"key": "T", "value": "T"}
+  ],
+  "katpv": ["A","A1","B","BE","B1","C","CE","C1","C1E","D","DE","D1","D1E","T"]
+}

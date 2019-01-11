@@ -1,16 +1,14 @@
 import "typeface-roboto";
 import React, { Component } from "react";
-import Typography from "@material-ui/core/Typography";
 import AppHeader from "./components/header/";
+import AppBody from "./components/body/";
 
 export default class App extends Component {
   render() {
     return (
       <div id="container">
-        <AppHeader />
-        <Typography variant="h5" align="center">
-          Введення
-        </Typography>
+        <AppHeader title="Позбавлення ПКТЗ" />        
+        <AppBody />
       </div>
     );
   }

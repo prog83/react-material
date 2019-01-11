@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import classNames from 'classnames';
 import { withStyles } from '@material-ui/core/styles';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
@@ -9,7 +10,6 @@ import Badge from '@material-ui/core/Badge';
 import MenuIcon from '@material-ui/icons/Menu';
 import SmsIcon from '@material-ui/icons/Sms';
 import HelpOutlineIcon from '@material-ui/icons/HelpOutline';
-
 
 const styles = {
   root: {
@@ -22,6 +22,9 @@ const styles = {
     marginLeft: -12,
     marginRight: 20,
   },
+  underline: {
+    textDecoration: "underline",
+  }
 };
 
 function AppHeader(props) {
@@ -33,12 +36,14 @@ function AppHeader(props) {
           <IconButton className={classes.menuButton} color="inherit" aria-label="Menu">
             <MenuIcon />
           </IconButton>
-          <img src="logo.png" alt="logo" className="logo" />
+          <a href="/">
+            <img src="logo.png" alt="logo" className="logo" />
+          </a>
           <Typography variant="h5" color="inherit">
             ІПНП
           </Typography>
-          <Typography variant="h6" align="center" color="inherit" className={classes.grow}>
-            Позбавлення ПКТЗ            
+          <Typography variant="h6" align="center" color="inherit" className={classNames(classes.grow, classes.underline)}>
+            {props.title}           
           </Typography>
           <IconButton color="inherit">
             <HelpOutlineIcon />
