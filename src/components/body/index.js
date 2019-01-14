@@ -1,8 +1,9 @@
 import React from 'react';
 import { withStyles } from '@material-ui/core/styles';
 import Typography from "@material-ui/core/Typography";
+import TextField  from "../common/textfield";
 import MultipleSelect from "../common/multipleselect";
-import DatePickers from "../common/datepickers";
+import DatePicker from "../common/datepicker";
 import * as Db from "../../db";
 
 const styles = theme => ({
@@ -19,14 +20,19 @@ function AppBody(props) {
       <Typography variant="h5" align="center">
         Введення
       </Typography>
-      <MultipleSelect label="Категорія" data={Db.dictionary().katpv} />        
+      <Typography variant="h6" align="left">
+        Посвідчення водія
+      </Typography>
       <form className={classes.container} noValidate>
-        <DatePickers
+        <TextField id="driversLicenseNum" label="Серія, номер" required />
+        <MultipleSelect id="driversLicenseCountry" label="Країна" data={Db.dictionary().psprvstr} />
+        <MultipleSelect id="driversLicenseCategory" label="Категорія" data={Db.dictionary().katpv} />      
+        <DatePicker
           id="driversLicenseDate"
           label="Дата видачі"
           required
         />
-        <DatePickers
+        <DatePicker
           id="withDrawelDateTime"
           label="Дата вилучення"
           required
